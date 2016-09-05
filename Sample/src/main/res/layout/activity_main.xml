@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.shopgun.android.cyanea.sample.MainActivity">
+
+    <TextView
+        android:id="@+id/text_01"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:text="C"/>
+
+    <TextView
+        android:id="@+id/text_02"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:text="Y"/>
+
+    <TextView
+        android:id="@+id/text_03"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:text="A"/>
+
+    <TextView
+        android:id="@+id/text_04"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:text="N"/>
+
+    <TextView
+        android:id="@+id/text_05"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:text="A"/>
+
+    <TextView
+        android:id="@+id/text_06"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:text="E"/>
+
+</LinearLayout>
