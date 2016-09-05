@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Cyanae/cyanae.iml" filepath="$PROJECT_DIR$/Cyanae/cyanae.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cyanae/Cyanae.iml" filepath="$PROJECT_DIR$/Cyanae/Cyanae.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cyanea.iml" filepath="$PROJECT_DIR$/Cyanea.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Sample/sample.iml" filepath="$PROJECT_DIR$/Sample/sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sample/Sample.iml" filepath="$PROJECT_DIR$/Sample/Sample.iml" />
     </modules>
   </component>
 </project>
