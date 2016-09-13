@@ -1,13 +1,48 @@
 apply plugin: 'com.android.library'
 
+buildscript {
+    // Custom buildscript closure for SDK module, to allow compilation from other projects
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:4.4.2'
+    }
+}
+
+ext {
+
+    PROJ_DRYRUN=false
+
+    PROJ_REPO='maven'
+    PROJ_GROUP='com.shopgun.android'
+    PROJ_ARTIFACTID='materialcolorcreator'
+    PROJ_VERSION='1.0.0'
+    PROJ_NAME='materialcolorcreator'
+    PROJ_ORG='shopgun'
+    PROJ_WEBSITEURL='https://shopgun.com'
+    PROJ_ISSUETRACKERURL='https://github.com/shopgun/material-color-creator-android/issues'
+    PROJ_VCSURL='https://github.com/shopgun/material-color-creator-android.git'
+    PROJ_DESCRIPTION='A library for generating color palette shades and overlay colors.'
+    PROJ_LABELS=['shopgun', 'android', 'sdk', 'api', 'etilbudsavis', 'utils', 'utilities', 'material', 'color', 'palette', 'design']
+
+    DEVELOPER_ID='shopgun'
+    DEVELOPER_NAME='ShopGun'
+    DEVELOPER_EMAIL='danny@shopgun.com'
+
+    LICENSE_ALL=["Apache-2.0"]
+    LICENSE_NAME='The Apache Software License, Version 2.0'
+    LICENSE_URL='http://www.apache.org/licenses/LICENSE-2.0.txt'
+}
+
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.1"
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -27,3 +62,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.0'
     testCompile 'junit:junit:4.12'
 }
+
+// Apply the Bintray plugin. Do release with "gradlew bintrayUpload"
+// Setup BINTRAY_USER and BINTRAY_KEY in your global gradle.properties to upload
+apply from: 'bintray.gradle'
