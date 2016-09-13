@@ -1,4 +1,4 @@
-![cyanae](cyanae-logo.png?raw=true "cyanae")
+![mccl](material-color-creator-logo.png?raw=true "mccl")
 
 A library for generating color palette shades and overlay colors.
 

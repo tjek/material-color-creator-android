@@ -8,7 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Cyanae" />
+            <option value="$PROJECT_DIR$/MaterialColorCreator" />
             <option value="$PROJECT_DIR$/Sample" />
           </set>
         </option>

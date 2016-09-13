@@ -8,4 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextAppearance.Mcc.TitleDemo" parent="TextAppearance.AppCompat.Large">
+    </style>
+
 </resources>
