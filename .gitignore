@@ -44,3 +44,5 @@ infer-out/
 *.iml
 *.iws
 *.ipr
+jarRepositories.xml
+modules.xml

@@ -3,19 +3,14 @@ apply plugin: 'com.android.library'
 buildscript {
     // Custom buildscript closure for SDK module, to allow compilation from other projects
     repositories {
-        jcenter()
     }
     dependencies {
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.1'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
-        classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:4.4.2'
     }
 }
 
 android {
 
     compileSdkVersion rootProject.compileSdkVersion
-    buildToolsVersion rootProject.buildToolsVersion
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
@@ -24,7 +19,7 @@ android {
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 24
+        targetSdkVersion 28
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -39,11 +34,9 @@ android {
 dependencies {
 
     def libs = rootProject.libDependencies
-    compile libs.markhor
-    compile libs.appcompat
+    implementation libs.markhor
+    implementation libs.appcompat
 
-    testCompile libs.junit
-    testCompile libs.espresso
+    testImplementation libs.junit
+    testImplementation libs.espresso
 }
-
-apply from: 'bintray.gradle'

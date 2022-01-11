@@ -17,7 +17,7 @@
 package com.shopgun.android.materialcolorcreator;
 
 import android.os.Parcelable;
-import android.support.annotation.ColorInt;
+import androidx.annotation.ColorInt;
 
 public interface MaterialColor extends Parcelable {
 

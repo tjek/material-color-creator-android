@@ -3,7 +3,6 @@ apply plugin: 'com.android.application'
 android {
 
     compileSdkVersion rootProject.compileSdkVersion
-    buildToolsVersion rootProject.buildToolsVersion
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
@@ -13,7 +12,7 @@ android {
     defaultConfig {
         applicationId "com.shopgun.android.cyanea.sample"
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -29,7 +28,7 @@ android {
 
 dependencies {
     def libs = rootProject.libDependencies
-    compile libs.materialcolorcreator
-    compile libs.markhor
-    compile libs.appcompat
+    implementation libs.materialcolorcreator
+    implementation libs.markhor
+    implementation libs.appcompat
 }
