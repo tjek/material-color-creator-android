@@ -1,1 +1,3 @@
-include ':MaterialColorCreator', ':Sample'
+include ':MaterialColorCreator'
+if (!System.env.JITPACK)
+    include ':Sample'
